@@ -14,10 +14,17 @@
 
 
     {% block content %}
-    <h1 class="align-middle">HEADLINE NEWS APP</h1>
 
+    <header>
         <div class="container">
-            <div class="row row-cols-1 row-cols-sd-3 row-cols-md-2 g-2">
+            <div class="text-center my-5">
+                <h1 class="fw-bolder">HEADS & TAILS NEWS!</h1>
+                <p class="lead mb-0" id = "head-color">Unveiling Truths, Shaping Narratives</p>
+            </div>
+        </div>
+    </header>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 {% for i in articles %}
                 <div class="col">
                     <div class="card shadow-sm">
@@ -31,7 +38,7 @@
                             <div class="d-flex justify-cntent-between align-items-center"></div>
                             <hr>
                             <small class="small text-muted">date: {{ i.publishedAt }}</small>
-                            <a href="{{ i.url }}" target="_blank" class="btn btn-success m-1">See News</a>
+                            <a href="{{ i.url }}" target="_blank" class="btn btn-success m-1">Read More...</a>
                         </div>
                     </div>
                 </div>

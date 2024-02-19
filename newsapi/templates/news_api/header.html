@@ -14,12 +14,27 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Country
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'home' %}?country=in">India</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?country=ie">Ireland</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?country=de">Germany</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?country=us">United States</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?country=gb">United Kingdom</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Categaries
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Sports</a></li>
-                  <li><a class="dropdown-item" href="#">Entertainment</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?category=Sports">Sports</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?category=Business">Business</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?category=Entertainment">Entertainment</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?category=technology">Technology</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?category=health">Health</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?category=Science">Science</a></li>
                 </ul>
               </li>
               <li class="nav-item">
